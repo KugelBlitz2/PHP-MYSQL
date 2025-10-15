@@ -20,4 +20,10 @@ while (!feof($brug)) {
 }
 
 fclose($brug);
+
+$blob = fopen("file.csv", "w");
+
+$orrrrg = "ibhorthtbhntyyy";
+
+fwrite($blob, $orrrrg);
 ?>
