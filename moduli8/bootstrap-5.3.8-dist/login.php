@@ -1,32 +1,110 @@
-<?php include("header.php"); ?>
-    
-    <div class="login">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+</body>
+</html>
 
-        <form class="form-signin" action="loginLogic.php" method="post">
-        
-            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
 
+            <!-- FIXED FORM TAG -->
+            <form action="loginlogic.php" method="POST">
 
-            <label for="inputEmail" class="sr-only">Username</label>
-            <input type="text" id="inputEmail" class="form-control" placeholder="Username" name="username" required autofocus>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="text" id="firstName" class="form-control form-control-lg" name="name" />
+                    <label class="form-label" for="firstName">First Name</label>
+                  </div>
+                </div>
 
+                <div class="col-md-6 mb-4">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="text" id="lastName" class="form-control form-control-lg" name="surname"/>
+                    <label class="form-label" for="lastName">Last Name</label>
+                  </div>
+                </div>
+              </div>
 
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+                  <div data-mdb-input-init class="form-outline datepicker w-100">
+                    <input type="text" class="form-control form-control-lg" id="birthdayDate" />
+                    <label for="birthdayDate" class="form-label">Birthday</label>
+                  </div>
+                </div>
 
+                <div class="col-md-6 mb-4">
+                  <h6 class="mb-2 pb-1">Gender: </h6>
 
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="Female" checked />
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign in</button>
-            
-            <small>Don't have account ? <a href="signup.php">Sign Up</a></small>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="maleGender" value="Male" />
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
 
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="otherGender" value="Other" />
+                    <label class="form-check-label" for="otherGender">Other</label>
+                  </div>
 
-            <p class="mt-5 mb-3 text-muted">Digital School  &copy; 2023</p>
-        </form>
+                </div>
+              </div>
 
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="email" id="emailAddress" class="form-control form-control-lg" name="email" />
+                    <label class="form-label" for="emailAddress">Email</label>
+                  </div>
+                </div>
 
+                <div class="col-md-6 mb-4 pb-2">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="tel" id="phoneNumber" class="form-control form-control-lg" name="phone" />
+                    <label class="form-label" for="phoneNumber">Phone Number</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <select class="select form-control-lg" name="subject">
+                    <option value="" disabled selected>Choose option</option>
+                    <option value="Subject 1">Subject 1</option>
+                    <option value="Subject 2">Subject 2</option>
+                    <option value="Subject 3">Subject 3</option>
+                  </select>
+                  <label class="form-label select-label">Choose option</label>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-2">
+                <input data-mdb-ripple-init class="btn btn-primary btn-lg" type="submit" name="submit" value="Submit" />
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
     </div>
-
-
-<?php include("footer.php"); ?>
+  </div>
+</section>
