@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$dbname = "db";
+$dbname = "mms";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
