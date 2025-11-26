@@ -64,7 +64,7 @@
     <h1 class="h3 mb-3 fw-normal">Log In</h1>
 
     <div class="form-floating">
-      <input type="text" class="form-control" id="floatingInput" placeholder="Emri" name="emri">
+      <input type="text" class="form-control" id="floatingInput" placeholder="Name" name="Name">
       <label for="floatingInput">Emri</label>
     </div>
     <div class="form-floating">
@@ -76,11 +76,11 @@
       <label for="floatingInput">Email</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingInput" placeholder="Password" name="password">
+      <input type="password" class="form-control" id="floatingInput" placeholder="tempPass" name="tempPass">
       <label for="floatingInput">Password</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password" name="confirm_password">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="confirmPass" name="confirmPass">
       <label for="floatingPassword">Confirm Password</label>
     </div>
 
